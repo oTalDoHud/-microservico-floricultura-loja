@@ -29,4 +29,14 @@ public class EnderecoDTO {
     public void setEstado(String estado) {
         this.estado = estado;
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("EnderecoDTO{");
+        sb.append("rua='").append(rua).append('\'');
+        sb.append(", numero=").append(numero);
+        sb.append(", estado='").append(estado).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
 }
